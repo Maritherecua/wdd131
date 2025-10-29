@@ -86,7 +86,7 @@ nav a:hover {
 /* Main content area */
 main {
     grid-area: main;
-    background-color: white;
+    background-color: lightgreen;
     padding: 2rem;
     margin: 2rem;
     border-radius: 8px;
