@@ -52,7 +52,7 @@ header nav ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
+    gap: 2rem;
     margin: 0;
     padding: 0;
 }
