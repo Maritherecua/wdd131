@@ -42,25 +42,12 @@ header {
     border-radius: 8px;
 }
 
-/* Header styling */
-header {
-    grid-area: header;
-    background-color: #333;
-    color: white;
-    padding: 2rem;
+/* Navigation styling inside header */
+header nav {
+    margin-top: 1rem;
 }
 
-/* Navigation styling with enhanced Flexbox */
-nav {
-    grid-area: nav;
-    background-color: #444;
-    padding: 0.5rem 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-nav ul {
+header nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
@@ -70,21 +57,21 @@ nav ul {
     padding: 0;
 }
 
-nav li {
+header nav li {
     margin: 0;
 }
 
-nav a {
+header nav a {
     color: white;
     text-decoration: none;
     padding: 0.5rem 1rem;
     display: block;
     transition: background-color 0.3s;
+    border-radius: 4px;
 }
 
-nav a:hover {
+header nav a:hover {
     background-color: #555;
-    border-radius: 4px;
 }
 
 /*.left-sidebar {
