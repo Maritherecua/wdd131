@@ -75,7 +75,7 @@ nav a:hover {
     background-color: #555;
     border-radius: 4px;
 }
-.left-sidebar {
+/*.left-sidebar {
     background-color: #f8f8f8;
     grid-column: 1 /2;
     padding: 1rem;
@@ -86,7 +86,7 @@ nav a:hover {
 /* Main content area */
 main {
     grid-area: main;
-    background-color: lightgreen;
+    background-color: lightslategrey;
     padding: 2rem;
     margin: 2rem;
     border-radius: 8px;
