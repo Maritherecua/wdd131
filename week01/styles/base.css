@@ -3,9 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
+    line-height: 1.0;
     color: #333;
     background-color: #f4f4f4;
     display: grid;
@@ -19,19 +20,33 @@ body {
     gap: 1rem;
     padding: 1 rem;
 }
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
 }
+
 header {
     grid-area: header;
+    background-color: black;
+    color: white;
+    padding: 0rem;
+    text-align: center;
+    border-radius: 4px;
+}
+
+/* Styling for all h1 elements */
+h1 {
     background-color: green;
     color: white;
-    padding: 2rem;
+    padding: 0.5rem;
     text-align: center;
-    border-radius: 8px;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    font-size: 1 rem;
 }
+
 header nav {
     margin-top: 1rem;
 }
@@ -63,12 +78,56 @@ header nav a {
 header nav a:hover {
     background-color: #555;
 }
+
 main {
     grid-area: main;
     background-color: white;
     padding: 2rem;
-    border-radius: 8px;
+    border-radius: 4px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Section image styling */
+.section-image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    flex-shrink: 0;
+}
+
+/* Content wrapper for text-image layout */
+.content-wrapper {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+/* Image to the right of text */
+.image-right .content-wrapper {
+    flex-direction: row;
+}
+
+/* Image to the left of text */
+.image-left .content-wrapper {
+    flex-direction: row-reverse;
+}
+
+/* Text content styling */
+.content-wrapper p {
+    flex: 1;
+    margin: 0;
+}
+
+/* Horizontal rule styling for section separators */
+hr {
+    border: none;
+    height: 2px;
+    background-color: #ddd;
+    margin: 2rem 0;
+    border-radius: 1px;
 }
 
 /* Aside/Sidebar styling */
@@ -80,6 +139,32 @@ aside {
     border: 1px solid #ddd;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
+
+/* Green background for Web Dev Resources heading */
+aside h3 {
+    background-color: green;
+    color: white;
+    padding: 0.5rem;
+    margin: -1rem -1rem 1rem -1rem;
+    border-radius: 8px 8px 0 0;
+    text-align: center;
+}
+
+/* Distribute Web Dev Resources bullet points */
+aside ul {
+    padding-left: 1.5rem;
+    margin-top: 1rem;
+}
+
+aside li {
+    margin-bottom: 0.8rem;
+    line-height: 1.4;
+}
+
+aside li:last-child {
+    margin-bottom: 0;
+}
+
 footer {
     grid-area: footer;
     background-color: green;
