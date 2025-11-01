@@ -29,7 +29,7 @@ body {
 
 header {
     grid-area: header;
-    background-color: black;
+    background-color: rgb(84, 33, 33);
     color: white;
     padding: 0rem;
     text-align: center;
