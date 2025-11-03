@@ -1,0 +1,17 @@
+/*Large screen media query for 500px and up*/
+/*change through declaration within the media query the header to a black background with white text*/
+/*Change the main element to display two columns of equal size*/
+@media screen and (min-width: 500px) {
+    body {
+        font-size: 1.2rem;
+    }
+}
+@media screen and (min-width: 500px) {
+    header {
+        background-color: #000;
+        color: #fff;
+    }
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
+}
