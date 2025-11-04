@@ -1,0 +1,112 @@
+/* layout.css - External stylesheet for basic layout */
+
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic body styling with CSS Grid - Header, Main/Aside, Footer */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "main aside"
+        "footer footer";
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 1fr 300px;
+    height: 100vh;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+/* Container for page content */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header styling */
+header {
+    grid-area: header;
+    background-color: #333;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 8px;
+}
+
+/* Navigation styling inside header */
+header nav {
+    margin-top: 1rem;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+header nav li {
+    margin: 0;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    display: block;
+    transition: background-color 0.3s;
+    border-radius: 4px;
+}
+
+header nav a:hover {
+    background-color: #555;
+}
+
+/*.left-sidebar {
+    background-color: #f8f8f8;
+    grid-column: 1 /2;
+    padding: 1rem;
+    margin: 1rem 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+/* Main content area */
+main {
+    grid-area: main;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Aside/Sidebar styling */
+aside {
+    grid-area: aside;
+    background-color: #f8f8f8;
+    padding: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer styling */
+footer {
+    grid-area: footer;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    border-radius: 8px;
+}
