@@ -1,0 +1,25 @@
+@media (min-width: 768px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px;
+    }
+    nav ul {
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    nav a {
+        flex: 1 1 100%;
+        border-bottom: none;
+        border-right: 1px solid #ccc;
+        font-size: medium;
+    }
+    nav a:last-child {
+        border-right: none;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+}
