@@ -24,6 +24,8 @@ header, main {
 }
 h1 { 
     font-size: 2rem;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
 }
 nav {
     background-color: #35424a;
@@ -47,6 +49,25 @@ nav a:hover {
     color: #fff;
     text-decoration: underline double;
 }
+/* Add hover effect to figure elements */
+.figure-hover:hover { box-shadow: 0 0 50px #333;}
+figure {
+    display: inline-block;
+    margin: 1rem;
+    border: 1px solid #ccc;
+    padding: .5rem;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    margin: .5rem;
+}
+figcaption {
+    text-align: center;
+    font-style: smaller;
+}
 .active {
     color: yellow;
 }
@@ -54,3 +75,6 @@ nav a:hover {
 main {
     margin-top: 20px;
 } 
+figure {
+    background-color: #fff;
+}
