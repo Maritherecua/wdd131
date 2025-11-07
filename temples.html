@@ -17,21 +17,25 @@
 <body>
     <header>
         <h1>Temple Album</h1>
+        <button id="menu-toggle" class="hamburger" aria-label="Toggle navigation menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
     </header>
-    <nav>
+    <nav id="navigation">
         <!-- A menu with the following links: Home, Old, New, Large, Small -->
         <ul>
-            <li><a href="#">Home</a></li>
+            <li><a href="#" class="active">Home</a></li>
             <li><a href="#">Old</a></li>
             <li><a href="#">New</a></li>
             <li><a href="#">Large</a></li>
             <li><a href="#">Small</a></li>
-
         </ul>
     </nav>
     <main>
         <!--h1 heading element for the main content of the page -->
-        <h1>Home</h1>
+        <h2>Home</h2>
         <!-- at least 9 figure elements with temple images and captions -->
         <figure>
             <img src="../images/kirtland-temple.jpg" alt="Kirtland Temple">
@@ -112,6 +116,34 @@
         <p id="lastModified"></p>
 
     </footer>
+
+    <script>
+        // Hamburger menu toggle
+        const menuToggle = document.getElementById('menu-toggle');
+        const navigation = document.getElementById('navigation');
+
+        menuToggle.addEventListener('click', function () {
+            navigation.classList.toggle('open');
+            menuToggle.classList.toggle('open');
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', function (event) {
+            if (!navigation.contains(event.target) && !menuToggle.contains(event.target)) {
+                navigation.classList.remove('open');
+                menuToggle.classList.remove('open');
+            }
+        });
+
+        // Close menu when clicking on a link
+        const navLinks = navigation.querySelectorAll('a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', function () {
+                navigation.classList.remove('open');
+                menuToggle.classList.remove('open');
+            });
+        });
+    </script>
 </body>
 
 </html>
