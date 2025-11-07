@@ -119,6 +119,16 @@
     </footer>
 
     <script>
+        // Populate current year and last modified date
+        const currentYearSpan = document.getElementById('currentyear');
+        const lastModifiedP = document.getElementById('lastModified');
+
+        // Set current year
+        currentYearSpan.textContent = new Date().getFullYear();
+
+        // Set last modified date
+        lastModifiedP.textContent = `Last Modified: ${document.lastModified}`;
+
         // Hamburger menu toggle
         const menuToggle = document.getElementById('menu-toggle');
         const navigation = document.getElementById('navigation');
