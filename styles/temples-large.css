@@ -1,14 +1,9 @@
 @media (min-width: 768px) {
     header {
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-end;
         align-items: center;
         padding: 30px;
-    }
-
-    /* Hide hamburger menu on desktop */
-    .hamburger {
-        display: none;
     }
 
     nav {
@@ -16,12 +11,25 @@
         background-color: #35424a;
         max-height: none;
         overflow: visible;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+    }
+
+    .nav-brand {
+        background-color: #35424a;
+        padding: 15px 20px;
+        text-align: left;
+        flex-shrink: 0;
     }
 
     nav ul {
         flex-direction: row;
         justify-content: flex-end;
         align-items: center;
+        flex-grow: 1;
     }
 
     nav a {
