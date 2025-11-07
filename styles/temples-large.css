@@ -6,6 +6,15 @@
         padding: 30px;
     }
 
+    .header-brand {
+        display: none;
+    }
+
+    /* Hide hamburger menu on desktop */
+    .hamburger {
+        display: none;
+    }
+
     nav {
         position: static;
         background-color: #35424a;
