@@ -5,21 +5,46 @@
         align-items: center;
         padding: 30px;
     }
+
     nav ul {
         flex-direction: row;
         justify-content: flex-end;
         align-items: center;
     }
+
     nav a {
         flex: 1 1 100%;
         border-bottom: none;
         border-right: 1px solid #ccc;
         font-size: medium;
     }
+
     nav a:last-child {
         border-right: none;
     }
+
     h1 {
         font-size: 2rem;
+    }
+
+    /* 3-column grid for temples */
+    main {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+        max-width: 1200px;
+        margin: 20px auto;
+        padding: 2rem;
+    }
+
+    figure {
+        max-width: 100%;
+    }
+
+    figcaption h2 {
+        font-size: 1.3rem;
+    }
+
+    figcaption p {
+        font-size: 1rem;
     }
 }
