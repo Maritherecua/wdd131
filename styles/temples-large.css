@@ -17,7 +17,7 @@
 
     nav {
         position: static;
-        background-color: #35424a;
+        background-color: #03c2f2;
         max-height: none;
         overflow: visible;
         display: flex;
@@ -28,7 +28,7 @@
     }
 
     .nav-brand {
-        background-color: #35424a;
+        background-color: #03c2f2;
         padding: 15px 20px;
         text-align: left;
         flex-shrink: 0;
