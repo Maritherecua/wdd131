@@ -145,6 +145,8 @@ figure {
     background-color: #fff;
     border-radius: 8px;
     transition: transform 0.3s ease;
+    margin: 0;
+    width: 100%;
 }
 
 figure:hover {
@@ -197,11 +199,6 @@ main h2 {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-figure {
-    background-color: #fff;
-    margin: 0;
-    width: 100%;
-}
 footer {
     background-color: #04846f;
     color: #fff;
