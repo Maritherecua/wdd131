@@ -133,11 +133,6 @@ nav a:hover {
     text-decoration: underline double;
 }
 
-/* Add hover effect to figure elements */
-.figure-hover:hover {
-    box-shadow: 0 0 50px #333;
-}
-
 figure {
     border: 1px solid #ccc;
     padding: 1rem;
