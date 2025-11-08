@@ -28,7 +28,7 @@
     }
 
     .nav-brand {
-        background-color: #09f179;
+        background-color: #06a0aed8;
         padding: 15px 20px;
         text-align: left;
         flex-shrink: 0;
@@ -44,7 +44,7 @@
     nav a {
         flex: 1 1 100%;
         border-bottom: none;
-        border-right: 1px solid #09f179;
+        border-right: 1px solid #06a0aed8;
         font-size: medium;
     }
 
