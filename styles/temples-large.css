@@ -58,6 +58,7 @@
 
     /* 3-column grid for temples */
     main {
+        display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 2rem;
         max-width: 1600px;
