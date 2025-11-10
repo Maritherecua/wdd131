@@ -29,6 +29,7 @@
 
     .nav-brand {
         background-color: #04846f;
+        color: #fff;
         padding: 15px 20px;
         text-align: left;
         flex-shrink: 0;
