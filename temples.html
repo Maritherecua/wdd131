@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="styles/temples.css">
     <link rel="stylesheet" href="styles/temples-large.css">
     <script src="scripts/temples.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
 </head>
 
 <body>
@@ -23,9 +24,8 @@
             <span></span>
             <span></span>
         </button>
-    </header>
-    <nav id="navigation">
-        <div class="nav-brand">Temple Album</div>
+    <nav> <!--id="navigation"-->
+        <h1>Temple Album</h1>
         <!-- A menu with the following links: Home, Old, New, Large, Small -->
         <ul>
             <li><a href="#" class="active">Home</a></li>
@@ -35,9 +35,11 @@
             <li><a href="#">Small</a></li>
         </ul>
     </nav>
+    </header>
     <main>
         <!--h1 heading element for the main content of the page -->
-        <h1>Temples Around the World</h1>
+        <h2 id="selection">Home</h2>
+        <div id="gallery">
         <!-- at least 9 figure elements with temple images and captions -->
         <figure>
             <img src="images/salt-lake-city-temple.jpg" alt="Salt Lake City Temple">
@@ -109,5 +111,4 @@
 
     </footer>
 </body>
-
 </html>
