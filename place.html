@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131-Place</title>
+    <meta name="description" content="A webpage about a place I like Cancun Mexico.">
+    <meta name="author" content="Maria Arroyo M.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;1,100;1,300;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+    <h1>Cancun, Mexico</h1>
+    </header>
+    <main>
+        <picture>
+            <source media="(min-width: 1000px)" srcset="images/cancun-beach-hero-large.webp">
+            <source media="(min-width: 500px)" srcset="images/cancun-beach-hero-medium.webp">
+            <img src="images/cancun-beach-hero-small.webp" alt="Beautiful beach in Cancun" class="section-image">
+        </picture>
+        <section class="card data">
+            <h2>About Cancun</h2>
+            <table>
+                <tr>
+                    <th>Location</th>
+                    <td>Yucatan Peninsula, Mexico</td>
+                </tr>
+                <tr>
+                    <th>Area</th>
+                    <td>1,500 km²</td>
+                </tr>
+                <tr>
+                    <th>Population</th>
+                    <td>630,000</td>
+                </tr>
+                <tr>
+                    <th>Language</th>
+                    <td>Spanish</td>
+                </tr>
+                <tr>
+                    <th>Currency</th>
+                    <td>Mexican Peso (MXN)</td>
+                </tr>
+                <tr>
+                    <th>Time Zone</th>
+                    <td>Central Time (CT)</td>
+                </tr>
+            </table>
+        </section>
+        <section class="card temp">
+            <h2>Weather</h2>
+            <img src="images/weather-icon.svg" alt="A drawing of the sun with clouds." id="weather-icon" width="100">
+            <div id="weather-info">
+                <p>Loading weather data...</p>
+                <table>
+                    <tr>
+                        <th>Temperature:</th>
+                        <td><span id="current-temperature">9</span>&deg;C</td>
+                    </tr>
+                    <tr>
+                        <th>Conditions:</th>
+                        <td id="condition">Sunny</td>
+                    </tr>
+                    <tr>
+                        <th>Humidity:</th>
+                        <td id="humidity">70%</td>
+                    </tr>
+                    <tr>
+                        <th>Wind Speed:</th>
+                        <td><span id="wind-speed">10 km/h</span></td>
+                    </tr>
+                    <tr>
+                        <th>Windchill:</th>
+                        <td><span id="windchill"></span></td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+        <!-- <section>
+            <h2>About Cancun</h2>
+            <p>Cancun is a popular tourist destination located in the eastern part of Mexico's Yucatan Peninsula. It is known for its stunning beaches, vibrant nightlife, and rich cultural heritage. Cancun offers a mix of modern amenities and ancient Mayan ruins, making it a unique place to visit.</p>
+            <img src="images/cancun-beach.jpg" alt="Beautiful beach in Cancun" class="section-image">
+        </section>
+        <section>
+            <h2>Things to Do</h2>
+            <ul>
+                <li>Visit the Mayan ruins of Tulum and Chichen Itza</li>
+                <li>Explore the underwater museum (MUSA)</li>
+                <li>Enjoy water sports like snorkeling and scuba diving</li>
+                <li>Experience the vibrant nightlife in the Hotel Zone</li>
+                <li>Relax on the pristine beaches and soak up the sun</li>
+            </ul>
+            <img src="images/mayan-ruins.jpg" alt="Mayan ruins near Cancun" class="section-image">
+        </section> -->
+        <footer>
+            <p>&copy; <span id="currentyear"></span> Maria Arroyo M. Cancun, Mexico.</p>
+            <p id="lastModified"></p>
+        </footer>
+</body>
+</html>
