@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,14 +9,16 @@
     <meta name="author" content="Maria Arroyo M.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;1,100;1,300;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;1,100;1,300;1,400&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="styles/place.css">
     <script src="scripts/getdates.js" defer></script>
     <script src="scripts/place.js" defer></script>
 </head>
+
 <body>
     <header>
-    <h1>Cancun, Mexico</h1>
+        <h1>Cancun, Mexico</h1>
     </header>
     <main>
         <picture>
@@ -55,31 +58,30 @@
         <section class="card temp">
             <h2>Weather</h2>
             <img src="images/weather-icon.svg" alt="A drawing of the sun with clouds." id="weather-icon" width="100">
-            <div id="weather-info">
-                <p>Loading weather data...</p>
-                <table>
-                    <tr>
-                        <th>Temperature:</th>
-                        <td><span id="current-temperature">9</span>&deg;C</td>
-                    </tr>
-                    <tr>
-                        <th>Conditions:</th>
-                        <td id="condition">Sunny</td>
-                    </tr>
-                    <tr>
-                        <th>Humidity:</th>
-                        <td id="humidity">70%</td>
-                    </tr>
-                    <tr>
-                        <th>Wind Speed:</th>
-                        <td><span id="wind-speed">10 km/h</span></td>
-                    </tr>
-                    <tr>
-                        <th>Windchill:</th>
-                        <td><span id="windchill"></span></td>
-                    </tr>
-                </table>
-            </div>
+            <p>Loading weather data...</p>
+            <table>
+                <tr>
+                    <th>Temperature:</th>
+                    <td><span id="current-temperature">9</span>&deg;C</td>
+                </tr>
+                <tr>
+                    <th>Conditions:</th>
+                    <td id="condition">Sunny</td>
+                </tr>
+                <tr>
+                    <th>Humidity:</th>
+                    <td id="humidity">70%</td>
+                </tr>
+                <tr>
+                    <th>Wind Speed:</th>
+                    <td><span id="wind-speed">10 km/h</span></td>
+                </tr>
+                <tr>
+                    <th>Windchill:</th>
+                    <td><span id="windchill"></span></td>
+                </tr>
+            </table>
+
         </section>
         <!-- <section>
             <h2>About Cancun</h2>
@@ -97,9 +99,11 @@
             </ul>
             <img src="images/mayan-ruins.jpg" alt="Mayan ruins near Cancun" class="section-image">
         </section> -->
-        <footer>
-            <p>&copy; <span id="currentyear"></span> Maria Arroyo M. Cancun, Mexico.</p>
-            <p id="lastModified"></p>
-        </footer>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Maria Arroyo M. Cancun, Mexico.</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
+
 </html>
