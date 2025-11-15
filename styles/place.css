@@ -1,6 +1,6 @@
 :root {
     --general-font: "Roboto", sans-serif;
-    --primary-color: hwb(0 10% 11%);
+    --primary-color: #d61818;
     --secondary-color: #004400;
     --primary-font-color: #eee;
     --weather-icon: url(../images/weather-icon.svg)
