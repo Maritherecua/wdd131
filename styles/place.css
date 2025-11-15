@@ -108,10 +108,7 @@ footer {
     }
 
     .temp h2::after {
-        content: " __";
-        color: rgb(0, 68, 0, 0%);
-        background-image: var(--weather-icon);
-        width: 40px;
+        content: " ⛅";
     }
 
     .data {
