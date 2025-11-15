@@ -1,5 +1,5 @@
-const temp = parseInt(document.querySelector("#current-temp").textContent);
-const wind = parseInt(document.querySelector("#windspeed").textContent);
+const temp = parseInt(document.querySelector("#current-temperature").textContent);
+const wind = parseInt(document.querySelector("#wind-speed").textContent);
 const wc = document.querySelector("#windchill");
 
 function calculateWindchill(temp, wind) {
