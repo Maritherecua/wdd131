@@ -1,6 +1,6 @@
 :root {
     --general-font: "Roboto", sans-serif;
-    --primary-color: #7b1717;
+    --primary-color: hwb(0 10% 11%);
     --secondary-color: #004400;
     --primary-font-color: #eee;
     --weather-icon: url(../images/weather-icon.svg)
@@ -61,7 +61,7 @@ td {
 }
 
 footer {
-    background-color: #7b1717;
+    background-color: #d61818;
     text-align: center;
     padding: .5em;
     color: var(--primary-font-color);
