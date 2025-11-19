@@ -3,13 +3,13 @@ h1 {
 }
 main {
     margin: 0 auto;
-    width: 300px;
+    width: 400px;
     display:flex;
     flex-direction: column;
 }
 img {
     width: 100%;
-    background: #f3f3f3;
+    background: #000;
     animation: fade 15s;
 }
 @keyframes fade {
