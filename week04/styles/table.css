@@ -29,6 +29,7 @@ main {
 }
 
 table {
+    width: 400px;
     margin: auto;
     border: solid gray;
     box-shadow: 0 2px .5em;
