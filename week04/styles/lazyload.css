@@ -16,3 +16,10 @@ img {
     0% { opacity: 0; }
     100% { opacity: 1; }
 }
+footer {
+    text-align: center;
+    padding: 1em;
+    background-color: #f0f7f6;
+    color: black;
+    margin-top: 2em;
+}
