@@ -1,6 +1,6 @@
 let aCourse = {
     code: "WDD131",
-    title: "Web Development and Design I",
+    title: "Dynamic Web Fundamentals",
     instructor: "Matthew Kearl.",
     credits: 2,
     sections: [
@@ -9,6 +9,17 @@ let aCourse = {
             enrolled: 85,
             instructor: "Matthew Kearl",
             room: "D 305"
+        },
+        {sectionNumber: "002",
+            enrolled: 78,
+            instructor: "Sarah Johnson",
+            room: "D 310"
+        },
+        {
+            sectionNumber: "003",
+            enrolled: 92,
+            instructor: "David Lee",
+            room: "D 315"
         }
     ]
 };
