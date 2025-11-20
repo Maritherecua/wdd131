@@ -67,36 +67,36 @@ const temples = [
 	  "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
 	},
 	{
-		templeName: "Buenos Aires, Argentina",
-		location: "Ciudad Evita, Buenos Aires, Argentina",
-		dedicated: "1986, January, 17",
-		area: 17683,
+		templeName: "Oakland California, USA",
+		location: "Oakland, California, USA",
+		dedicated: "1964/2019, November 17/June 16",
+		area: 80157,
 		imageUrl:
-		"https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/buenos-aires-argentina/800x500/buenos-airies-argentina-temple-1009069-wallpaper.jpg"
+		"https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/oakland-california-usa/400x250/oakland-california-usa-temple-1009069-wallpaper.jpg"
 	},
 	{
-		templeName: "Córdoba, Argentina",
-		location: "Córdoba, Argentina",
-		dedicated: "2015, May, 17",
-		area: 34369,
+		templeName: "Guadalajara Mexico",
+		location: "Guadalajara, Mexico",
+		dedicated: "2001, April, 29",
+		area: 10700,
 		imageUrl:
-		"https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/cordoba-argentina/2018/800x500/Cordoba-Argentina-Temple01.jpg"
+		"https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/guadalajara-mexico/2018/400x250/Guadalajara-Mexico-Temple01.jpg"
 	},
 	{
-		templeName: "Salta, Argentina",
-		location: "Salta, Argentina",
-		dedicated: "2023, June, 16",
-		area: 27111,
+		templeName: "Hong Kong China",
+		location: "Hong Kong, China",
+		dedicated: "1996, May, 26",
+		area: 51921,
 		imageUrl:
 		"https://www.churchofjesuschrist.org/imgs/8997d67ecc3011eebfd1eeeeac1e4e2f81a7e639/full/320%2C/0/default"
 	},
 	{
-		templeName: "Mendoza, Argentina",
-		location: "Mendoza, Argentina",
-		dedicated: "2024, September, 22",
-		area: 21000,
+		templeName: "Sacramento California, USA",
+		location: "Sacramento, California, USA",
+		dedicated: "2006, September, 3",
+		area: 19500,
 		imageUrl:
-		"https://churchofjesuschristtemples.org/assets/img/temples/mendoza-argentina-temple/mendoza-argentina-temple-10403.jpg"
+		"https://churchofjesuschristtemples.org/assets/img/temples/sacramento-california-usa-temple/sacramento-california-usa-temple-10403.jpg"
 	}
 	// Add more temple objects here...
 ];
