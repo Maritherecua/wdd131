@@ -1,0 +1,19 @@
+@media screen and (min-width:520px) {
+    #menu {
+        display: none;
+    }
+}
+nav {
+    display:flex;
+    flex-direction: row;
+    position:initial;
+    justify-content: center;
+    margin: auto;
+    width: 80%;
+}
+nav a{
+    display: block;
+}
+nav a.active {
+    color:#ff3232;
+}

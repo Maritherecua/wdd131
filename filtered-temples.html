@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Album</title>
+    <meta name="description" content="A webpage showcasing different temples around the world">
+    <meta name="author" content="Maria Arroyo M.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+    <script src="scripts/temples.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-brand">Temple Album</div>
+        <button id="menu-toggle" class="hamburger" aria-label="Toggle navigation menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+    <nav id="navigation">
+        <div class="nav-brand">Temple Album</div>
+        <!-- A menu with the following links: Home, Old, New, Large, Small -->
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">Old</a></li>
+            <li><a href="#">New</a></li>
+            <li><a href="#">Large</a></li>
+            <li><a href="#">Small</a></li>
+        </ul>
+    </nav>
+    <main>
+        <!--h1 heading element for the main content of the page -->
+        <h1>Home</h1>
+        <!-- at least 9 figure elements with temple images and captions -->
+        <figure>
+            <img src="images/salt-lake-city-temple.jpg" alt="Salt Lake City Temple">
+            <figcaption>
+                <p>Salt Lake City Temple</p>
+            </figcaption>
+        </figure>
+        <figure>
+            <img src="images/freiberg-germany.jpg" alt="Freiberg Germany Temple">
+            <figcaption>
+
+                <p>Freiberg Germany Temple</p>
+            </figcaption>
+        </figure>
+        <figure>
+            <img src="images/laie-hawaii-temple.jpg" alt="Laie Hawaii Temple">
+            <figcaption>
+
+                <p>Laie Hawaii Temple</p>
+            </figcaption>
+        </figure>
+        <figure>
+            <img src="images/mexico-city-temple.jpg" alt="Mexico City Mexico Temple">
+            <figcaption>
+
+                <p>Mexico City Mexico Temple</p>
+            </figcaption>
+        </figure>
+        <figure>
+            <img src="images/cardston-alberta-temple.jpg" alt="Cardston Alberta Temple">
+            <figcaption>
+
+                <p>Cardston Alberta Canada Temple</p>
+            </figcaption>
+        </figure>
+        <figure>
+            <img src="images/london-england-temple.jpg" alt="London England Temple">
+            <figcaption>
+
+                <p>London England Temple</p>
+            </figcaption>
+        </figure>
+        <figure>
+            <img src="images/rome-italy-temple.jpg" alt="Rome Italy Temple">
+            <figcaption>
+
+                <p>Rome Italy Temple</p>
+            </figcaption>
+        </figure>
+        <figure>
+            <img src="images/oakland-california-temple.jpg" alt="Oakland California Temple">
+            <figcaption>
+
+                <p>Oakland California Temple</p>
+            </figcaption>
+        </figure>
+        <figure>
+            <img src="images/bern-switzerland-temple.jpg" alt="Bern Switzerland Temple">
+            <figcaption>
+
+                <p>Bern Switzerland Temple</p>
+            </figcaption>
+        </figure>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Maria Arroyo M. California.</p>
+        <p id="lastModified"></p>
+
+    </footer>
+</body>
+
+</html>
