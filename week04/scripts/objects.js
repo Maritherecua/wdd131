@@ -10,7 +10,8 @@ let aCourse = {
             instructor: "Matthew Kearl",
             room: "D 305"
         },
-        {sectionNumber: "002",
+        {
+            sectionNumber: "002",
             enrolled: 78,
             instructor: "Sarah Johnson",
             room: "D 310"
@@ -44,4 +45,4 @@ function renderSections(course) {
 }
 
 setCourseInfo(aCourse);
-renderSections(aCourse.sections);
+renderSections(aCourse);
