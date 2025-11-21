@@ -6,7 +6,6 @@ hamButton.addEventListener('click', () => {
     hamButton.classList.toggle('open');
 });
 
-// get current year
 document.getElementById("currentyear").innerText = new Date().getFullYear();
 
 const temples = [
@@ -90,14 +89,7 @@ const temples = [
         imageUrl:
             "images/salt-lake-city-temple.jpg"
     },
-    {
-        templeName: "Sacramento California, USA",
-        location: "Sacramento, California, USA",
-        dedicated: "2006, September, 3",
-        area: 19500,
-        imageUrl:
-            "https://picsum.photos/400/250?random=3"
-    }
+    
     // Add more temple objects here...
 ];
 
