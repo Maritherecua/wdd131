@@ -4,14 +4,14 @@
 }
 
 
-body {  
+body {
     max-width: 1200px;
     margin: auto;
     font-family: "Roboto", sans-serif;
     min-height: 1vh;
 }
 
-header{
+header {
     grid-column: 1/3;
     color: #ddd;
     background-color: var(--primary-color);
@@ -25,9 +25,10 @@ header h1 {
 
 main {
     display: grid;
-    
+
     max-width: 1500px;
 }
+
 h2 {
     text-align: center;
 }
@@ -78,7 +79,7 @@ footer {
 #menu {
     font-size: 1.5rem;
     padding: .1em .2em;
-    background-color:  var(--primary-color);
+    background-color: var(--primary-color);
     color: var(--primary-font-color);
     position: fixed;
     right: .7em;
@@ -89,28 +90,16 @@ footer {
 
 
 #menu::before {
-	content: "☰";
+    content: "☰";
 }
 
 #menu.open::before {
-	content: "✕";
+    content: "✕";
 }
 
-nav, a{
+nav,
+a {
     margin: 0;
-}
-
-nav a {
-    padding: 1em;
-    flex: 1 1 100%;
-    text-decoration: none;
-    color: #fff;
-    border-bottom: 3px solid var(--primary-color);
-}
-nav a:hover {
-    border-bottom: 3px solid yellow;
-    font-weight: 700;
-    border-radius: 0 0 .5em .5em;
 }
 
 nav {
@@ -127,14 +116,17 @@ nav {
 
 nav a {
     display: none;
+    padding: 1em;
+    flex: 1 1 100%;
     font-weight: 500;
-    color: var(--primary-font);
+    color: var(--primary-font-color);
     text-decoration: none;
+    border-bottom: 3px solid var(--primary-color);
     border-radius: 0 0 .5em .5em;
 }
 
 nav a.active {
-    color: #ffca38 ;
+    color: #ffca38;
     text-decoration: underline 2px;
 }
 
@@ -142,10 +134,11 @@ nav a:hover {
     background-color: white;
     color: var(--primary-color);
     font-weight: 800;
+    border-bottom: 3px solid yellow;
     border-radius: 0 0 .5em .5em;
-    
 }
 
-.open, .open a {
+.open,
+.open a {
     display: block;
 }
