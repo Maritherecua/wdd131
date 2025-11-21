@@ -83,12 +83,12 @@ const temples = [
 		"https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/guadalajara-mexico/2018/400x250/Guadalajara-Mexico-Temple01.jpg"
 	},
 	{
-		templeName: "Hong Kong China",
-		location: "Hong Kong, China",
-		dedicated: "1996, May, 26",
-		area: 51921,
+		templeName: "Fresno California, USA",
+		location: "Fresno, California, USA",
+		dedicated: "2000, April, 9",
+		area: 10850,
 		imageUrl:
-		"https://www.churchofjesuschrist.org/imgs/8997d67ecc3011eebfd1eeeeac1e4e2f81a7e639/full/320%2C/0/default"
+		"https://churchofjesuschristtemples.org/fresno-california-temple/photographs/#Gallery-57"
 	},
 	{
 		templeName: "Sacramento California, USA",
