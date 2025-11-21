@@ -72,23 +72,23 @@ const temples = [
         dedicated: "1964/2019, November 17/June 16",
         area: 80157,
         imageUrl:
-            "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/oakland-california-usa/400x250/oakland-california-usa-temple-1009069-wallpaper.jpg"
+            "images/oakland-california-temple.jpg"
     },
     {
-        templeName: "Guadalajara Mexico",
-        location: "Guadalajara, Mexico",
-        dedicated: "2001, April, 29",
-        area: 10700,
+        templeName: "London England",
+        location: "London, England",
+        dedicated: "1958, September, 7",
+        area: 42652,
         imageUrl:
-            "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/guadalajara-mexico/2018/400x250/Guadalajara-Mexico-Temple01.jpg"
+            "images/london-england-temple.jpg"
     },
     {
-        templeName: "Fresno California, USA",
-        location: "Fresno, California, USA",
-        dedicated: "2000, April, 9",
-        area: 10850,
+        templeName: "Salt Lake City",
+        location: "Salt Lake City, Utah, United States",
+        dedicated: "1893, April, 6",
+        area: 253015,
         imageUrl:
-            "https://churchofjesuschristtemples.org/fresno-california-temple/photographs/#Gallery-57"
+            "images/salt-lake-city-temple.jpg"
     },
     {
         templeName: "Sacramento California, USA",
@@ -96,7 +96,7 @@ const temples = [
         dedicated: "2006, September, 3",
         area: 19500,
         imageUrl:
-            "https://churchofjesuschristtemples.org/assets/img/temples/sacramento-california-usa-temple/sacramento-california-usa-temple-10403.jpg"
+            "https://picsum.photos/400/250?random=3"
     }
     // Add more temple objects here...
 ];
@@ -112,7 +112,7 @@ function DisplayTemples(temples) {
 		<p><strong>Location: </strong>${t.location}</p>
 		<p><strong>Dedicated: </strong>${t.dedicated}</p>
 		<p><strong>Size: </strong>${t.area}</p>
-		<img src="${t.imageUrl}" alt="A picture of ${t.templeName} Temple" loading="lazy">
+		<img src="${t.imageUrl}" alt="A picture of ${t.templeName} Temple" loading="lazy" width="400" height="250">
 		`;
 
         card.innerHTML = templeHTML;
