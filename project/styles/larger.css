@@ -1,0 +1,47 @@
+@media screen and (min-width: 550px) {
+    :root {
+        --font-titles: "Exo 2", sans-serif;
+        --font-paragraphs: "Roboto", sans-serif;
+        --primary-color: #5DADE2; /* Soft Blue */
+        --secondary-color: #58D68D; /* Soft Green */
+        --bright-font: #1A252F;
+        --dark-font:var(--dark-font);
+        font-size: large;
+    }
+    header, footer {
+        border-radius: 2em 0;
+        background: none;
+        box-shadow: none;
+    }
+    h1 {
+        background-color: var(--primary-color);
+        padding: .5em;
+        margin: 0.5em 0;
+        border-radius: 4em 0;
+        box-shadow: 0px 0px .5em;
+    }
+    menu {
+        display: none;
+    }
+    nav {
+        display: flex;
+        position: initial;
+        justify-content: center;
+        margin: 1em auto 0;
+        width: 100%;
+        flex-direction: row;
+        border-radius: 2em 2em 0 0;
+    
+    }
+    nav a {
+        display:block;
+        flex: 1 1 100%;
+        border-radius: 2em 2em 0 0;
+    }
+    nav a:hover {
+        border-radius:5em;
+    }
+    nav:nth-child(4) {
+        border-radius: 5em;
+    }
+}
