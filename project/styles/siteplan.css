@@ -23,7 +23,13 @@ body {
     margin-right: auto;
 }
 
-h1,
+h1 {
+    font-family: var(--font-title);
+    color: var(--primary-color);
+    padding:1rem 0 0;
+    margin: .5em;
+    text-align: center;
+}
 h2,
 h3 {
     font-family: var(--font-title);
