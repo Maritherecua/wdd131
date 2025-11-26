@@ -25,7 +25,6 @@ body {
 
 h1 {
     font-family: var(--font-title);
-    color: var(--primary-color);
     padding:1rem 0 0;
     margin: .5em;
     text-align: center;
@@ -48,8 +47,8 @@ header {
 
 main {
     padding: 1rem;
-    background-color: white;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: rgb(215, 237, 237);
+    box-shadow: 0 2px 4px rgba(221, 229, 231, 0.1);
     margin-bottom: 1rem;
 }
 
