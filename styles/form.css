@@ -95,6 +95,15 @@ footer {
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
 }
 
+/* Checkbox container */
+.wf label[for*="option"],
+.wf label:has(input[type="checkbox"]) {
+    width: 100%;
+    max-width: 400px;
+    font-weight: normal;
+    margin-bottom: 0.5rem;
+}
+
 .wf input:required,
 select:required {
     border: 1px solid #666;
@@ -117,10 +126,11 @@ select:required:valid {
 .wf .star-rating {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: flex-start;
+    justify-content: center;
     margin-bottom: 1rem;
-    width: 160px;
-    right: 10px;
+    width: 100%;
+    max-width: 400px;
+    flex-wrap: nowrap;
 }
 
 /*hide the inputs*/
@@ -135,6 +145,7 @@ select:required:valid {
     font-size: 32px;
     color: gold;
     transition: 0.2s ease-in-out;
+    position: relative;
 }
 
 /*give label a hover state*/

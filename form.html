@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,10 +10,13 @@
     <link rel="stylesheet" href="styles/form.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap"
+        rel="stylesheet">
     <script src="scripts/getdates.js" defer></script>
     <script src="scripts/form.js" defer></script>
 </head>
+
 <body>
     <header>
         <h1>Product Review</h1>
@@ -27,16 +31,16 @@
                 </label>
                 <label>Overall Rating</label>
                 <div class="star-rating">
-                    <input type="radio" name="stars" id= "star-a"value="5"/>
-                    <label for="star-a">&#9733;</label>
-                    <input type="radio" name="stars" id="4-stars" value="4">
-                    <label for="star-b">&#9733;</label>
-                    <input type="radio" name="stars" value="3" id="3-stars">
-                    <label for="star-c">&#9733;</label>
-                    <input type="radio" name="stars" value="2" id="2-stars">
-                    <label for="star-d">&#9733;</label>
-                    <input type="radio" name="stars" value="1" id="1-star">
-                    <label for="star-e">&#9733;</label>
+                    <input type="radio" name="stars" id="star-5" value="5" />
+                    <label for="star-5"></label>
+                    <input type="radio" name="stars" id="star-4" value="4">
+                    <label for="star-4"></label>
+                    <input type="radio" name="stars" value="3" id="star-3">
+                    <label for="star-3"></label>
+                    <input type="radio" name="stars" value="2" id="star-2">
+                    <label for="star-2"></label>
+                    <input type="radio" name="stars" value="1" id="star-1">
+                    <label for="star-1"></label>
                 </div>
                 <label>Date of installation<input type="date" name="installation" id="installation" required></label>
                 <label>What features did you find useful? (check alll that apply)</label>
@@ -44,16 +48,19 @@
                 <label><input type="checkbox" name="option2" id="option2" value="easeofuse">Ease of Use</label>
                 <label><input type="checkbox" name="option3" id="option3" value="performance">Performance</label>
                 <label><input type="checkbox" name="option4" id="option4" value="design">Design</label>
-                <label>Written Review <span class="optional">(optional)</span><textarea name="comment" id="comment" cols="50" rows="5" placeholder="write here..."></textarea></label>
-                <label>User Name <span class="optional">(optional)</span><input type="text" name="name" id="name"></label>
+                <label>Written Review <span class="optional">(optional)</span><textarea name="comment" id="comment"
+                        cols="50" rows="5" placeholder="write here..."></textarea></label>
+                <label>User Name <span class="optional">(optional)</span><input type="text" name="name"
+                        id="name"></label>
                 <input type="submit" value="Send Review">
             </fieldset>
         </form>
     </main>
     <footer>
         <p>&copy;<span id="currentyear"></span> | 2025 Maria Arroyo<| California, USA </p>
-        <p>Last Modified: <span id="lastmodified"></span></p>
+                <p>Last Modified: <span id="lastmodified"></span></p>
     </footer>
-    
+
 </body>
+
 </html>
