@@ -5,16 +5,19 @@ body {
     margin: auto;
     padding: 20px;
 }
+
 header {
     text-align: center;
     margin-bottom: 20px;
     padding: 1rem;
     background-color: #007BFF;
 }
+
 header h1 {
     color: white;
     margin: 0;
 }
+
 main {
     background: white;
     padding: 1rem;
@@ -22,6 +25,7 @@ main {
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
 footer {
     text-align: center;
     margin-top: 20px;
@@ -29,6 +33,7 @@ footer {
     background-color: #007BFF;
     color: white;
 }
+
 /* Form Styles */
 .wf fieldset {
     border: 1px solid #ccc;
@@ -36,20 +41,29 @@ footer {
     margin: 2rem auto;
     border-radius: 5px;
     max-width: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
 .wf legend {
     font-weight: bold;
     padding: 0 10px;
 }
+
 .wf label:not(.star-rating label) {
     display: block;
     margin-bottom: 0.5rem;
     font-weight: bold;
-    color:black;
+    color: black;
+    width: 100%;
+    max-width: 400px;
 }
+
 .wf input[type="text"],
 .wf input[type="date"],
-.wf select {
+.wf select,
+.wf textarea {
     width: 100%;
     max-width: 400px;
     display: block;
@@ -59,6 +73,7 @@ footer {
     border-radius: 3px;
     box-sizing: border-box;
 }
+
 .wf input[type="submit"] {
     background-color: #28a745;
     color: white;
@@ -68,27 +83,35 @@ footer {
     cursor: pointer;
     font-size: 1rem;
     max-width: 400px;
-    width: 96%;
-    margin: 1rem 2% 2rem 2%;
+    width: 100%;
+    margin: 1rem 0 0.5rem 0;
 }
+
 .wf input[type="submit"]:active {
     background-color: #218838;
 }
+
 .wf input[type="submit"]:hover {
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
 }
-.wf input:required, select:required {
+
+.wf input:required,
+select:required {
     border: 1px solid #666;
 }
-.wf input:required:valid, select:required:valid {
+
+.wf input:required:valid,
+select:required:valid {
     border: 1px solid #28a745;
 }
+
 .optional {
     font-weight: normal;
     font-style: italic;
     color: #666;
     margin-left: 5px;
 }
+
 /* Star Rating Styles */
 /*use reverse flexbox to display stars from right to left*/
 .wf .star-rating {
@@ -99,23 +122,27 @@ footer {
     width: 160px;
     right: 10px;
 }
+
 /*hide the inputs*/
 .wf .star-rating input {
     display: none;
 }
+
 /*set properties for all labels */
-.star-rating  label {
+.star-rating label {
     width: 32px;
     height: 32px;
     font-size: 32px;
     color: gold;
     transition: 0.2s ease-in-out;
 }
+
 /*give label a hover state*/
 .wf .star-rating label:hover {
     color: #ffcc00;
     transition: .2s ease-in-out;
 }
+
 /*star-rating label:active::before {
     transform: scale(1.1);
 }*/
@@ -126,8 +153,9 @@ footer {
     text-align: center;
     line-height: 32px;
 }
+
 /*set shape of selected label*/
-.wf .star-rating input:checked ~ label::before {
+.wf .star-rating input:checked~label::before {
     content: '★';
     color: #ffcc00;
     position: absolute;
