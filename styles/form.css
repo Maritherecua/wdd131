@@ -173,3 +173,14 @@ select:required:valid {
     top: 0;
     line-height: 26px;
 }
+
+/* Media Query for larger screens */
+@media (min-width: 768px) {
+    body {
+        padding: 40px;
+    }
+
+    .wf fieldset {
+        padding: 2rem;
+    }
+}
