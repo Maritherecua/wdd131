@@ -24,41 +24,44 @@
     <main>
         <form action="review.html" method="get" class="wf">
             <fieldset>
-                <label>Product Name
-                    <select name="product" id="product" required>
-                        <option value="" disabled>Select a product... </option>
-                    </select>
-                </label>
+                <label for="product">Product Name</label>
+                <select name="product" id="product" required>
+                    <option value="" disabled selected>Select a product... </option>
+                </select>
                 <label>Overall Rating</label>
                 <div class="star-rating">
-                    <input type="radio" name="stars" id="star-5" value="5">
+                    <input type="radio" name="stars" id="star-5" value="5" required>
                     <label for="star-5"></label>
-                    <input type="radio" name="stars" id="star-4" value="4">
+                    <input type="radio" name="stars" id="star-4" value="4" required>
                     <label for="star-4"></label>
-                    <input type="radio" name="stars" value="3" id="star-3">
+                    <input type="radio" name="stars" value="3" id="star-3" required>
                     <label for="star-3"></label>
-                    <input type="radio" name="stars" value="2" id="star-2">
+                    <input type="radio" name="stars" value="2" id="star-2" required>
                     <label for="star-2"></label>
-                    <input type="radio" name="stars" value="1" id="star-1">
+                    <input type="radio" name="stars" value="1" id="star-1" required>
                     <label for="star-1"></label>
                 </div>
-                <label>Date of installation<input type="date" name="installation" id="installation" required></label>
+                <label for="installation">Date of installation</label>
+                <input type="date" name="installation" id="installation" required>
                 <label>What features did you find useful? (check alll that apply)</label>
-                <label><input type="checkbox" name="option1" id="option1" value="durability">Durability</label>
-                <label><input type="checkbox" name="option2" id="option2" value="easeofuse">Ease of Use</label>
-                <label><input type="checkbox" name="option3" id="option3" value="performance">Performance</label>
-                <label><input type="checkbox" name="option4" id="option4" value="design">Design</label>
-                <label>Written Review <span class="optional">(optional)</span><textarea name="comment" id="comment"
-                        cols="50" rows="5" placeholder="write here..."></textarea></label>
-                <label>User Name <span class="optional">(optional)</span><input type="text" name="name"
-                        id="name"></label>
+                <label for="option1"><input type="checkbox" name="option1" id="option1"
+                        value="durability">Durability</label>
+                <label for="option2"><input type="checkbox" name="option2" id="option2" value="easeofuse">Ease of
+                    Use</label>
+                <label for="option3"><input type="checkbox" name="option3" id="option3"
+                        value="performance">Performance</label>
+                <label for="option4"><input type="checkbox" name="option4" id="option4" value="design">Design</label>
+                <label for="comment">Written Review <span class="optional">(optional)</span></label>
+                <textarea name="comment" id="comment" cols="50" rows="5" placeholder="write here..."></textarea>
+                <label for="name">User Name <span class="optional">(optional)</span></label>
+                <input type="text" name="name" id="name">
                 <input type="submit" value="Send Review">
             </fieldset>
         </form>
     </main>
     <footer>
-        <p>&copy;<span id="currentyear"></span>  California, USA </p>
-                <p>Last Modified: <span id="lastmodified"></span></p>
+        <p>&copy;<span id="currentyear"></span> California, USA </p>
+        <p>Last Modified: <span id="lastmodified"></span></p>
     </footer>
 
 </body>
