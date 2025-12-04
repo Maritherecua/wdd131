@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <meta name="description" content="A simple sign up form for new users.">
+    <meta name="author" content="Maria Arroyo">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <script src="scripts/services.js" defer></script>
+    <script src="scripts/menu.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Consciencia Holistica</h1>
+        <button id="menu"></button>
+        <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Sign Up</h2>
+        <form method="get" action="submit.html" class="wf">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label>First Name* <input type="text" name="first_name" required></label>
+                <label>Last Name* <input type="text" name="last_name" required></label>
+                <label>Email* <input type="email" name="email" required></label>
+                <label>Phone* <input type="tel" name="phone" required></label>
+                <label><input type="checkbox" name="adult" value="yes"> I am over 18 years old</label>
+            </fieldset>
+            <fieldset>
+                <legend>Issue information</legend>
+                <label>Select your issue
+                    <select name="issue" required>
+                        <option value="" disabled selected>Select an option</option>
+                        <option value="anxiety">Anxiety</option>
+                        <option value="depression">Depression</option>
+                        <option value="stress">Stress</option>
+                        <option value="self-esteem">Self-Esteem</option>
+                        <option value="relationship">Relationship Issues</option>
+                        <option value="other">Other</option>
+                    </select>
+                </label>
+                <label>Describe your issue*
+                    <textarea name="issue_description" rows="4" required></textarea>
+            </fieldset>
+            <input type="submit" value="Sign Up">
+      <!--<button type="submit">Sign Up</button>-->
+        </form>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Consciencia Holistica, California, USA.</p>
+        <p>Website by Maria Arroyo M.</p>
+    </footer>
+    
+</body>
+</html>
