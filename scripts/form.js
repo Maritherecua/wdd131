@@ -25,17 +25,20 @@ const products = [
     averagerating: 5.0
   }
 ];
+
+const productSelect = document.querySelector("#product");
+
 function createProductList() {
-    products.forEach(p => {
-        optElement = document.createElement("option");
-        optElement.setAttribute("value", p.id);
-        optElement.innerText = p.name
+  products.forEach(p => {
+    const optElement = document.createElement("option");
+    optElement.setAttribute("value", p.id);
+    optElement.innerText = p.name;
 
-        productSelect?.appendChild(optElement);
-    });
-  }
+    productSelect?.appendChild(optElement);
+  });
+}
 
-  createProductList();
+createProductList();
 
 let counter = localStorage.getItem("tally") || 1;
 const counterDisplay = document.querySelector("#reviews");
