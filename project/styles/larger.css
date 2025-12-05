@@ -70,4 +70,6 @@ nav a:hover {
 nav:nth-child(4) {
     border-radius: 5em;
 }
+nav a.active {
+    color: #ff3232;
 }
