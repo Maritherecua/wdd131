@@ -44,9 +44,14 @@ h3 {
 }
 
 main {
-
     background-color: white;
     min-height: 75vh;
+    padding: 0 1.5rem;
+}
+
+main section,
+main p {
+    padding: 0 1rem;
 }
 
 .thanksmain {
