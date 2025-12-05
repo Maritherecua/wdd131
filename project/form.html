@@ -36,16 +36,32 @@
         <form method="get" action="submit.html" class="wf">
             <fieldset>
                 <legend>Personal Information</legend>
-                <label>First Name* <input type="text" name="first_name" required></label>
-                <label>Last Name* <input type="text" name="last_name" required></label>
-                <label>Email* <input type="email" name="email" required></label>
-                <label>Phone* <input type="tel" name="phone" required></label>
-                <label><input type="checkbox" name="adult" value="yes"> I am over 18 years old</label>
+                <div class="form-row">
+                    <label for="first_name">First Name*</label>
+                    <input id="first_name" type="text" name="first_name" required>
+                </div>
+                <div class="form-row">
+                    <label for="last_name">Last Name*</label>
+                    <input id="last_name" type="text" name="last_name" required>
+                </div>
+                <div class="form-row">
+                    <label for="email">Email*</label>
+                    <input id="email" type="email" name="email" required>
+                </div>
+                <div class="form-row">
+                    <label for="phone">Phone*</label>
+                    <input id="phone" type="tel" name="phone" required>
+                </div>
+                <div class="form-row">
+                    <input id="adult" type="checkbox" name="adult" value="yes">
+                    <label for="adult">I am over 18 years old</label>
+                </div>
             </fieldset>
             <fieldset>
                 <legend>Issue information</legend>
-                <label>Select your issue
-                    <select name="issue" required>
+                <div class="form-row">
+                    <label for="issue">Select your issue</label>
+                    <select id="issue" name="issue" required>
                         <option value="" disabled selected>Select an option</option>
                         <option value="anxiety">Anxiety</option>
                         <option value="depression">Depression</option>
@@ -54,9 +70,11 @@
                         <option value="relationship">Relationship Issues</option>
                         <option value="other">Other</option>
                     </select>
-                </label>
-                <label>Describe your issue*
-                    <textarea name="issue_description" rows="4" required></textarea>
+                </div>
+                <div class="form-row">
+                    <label for="issue_description">Describe your issue*</label>
+                    <textarea id="issue_description" name="issue_description" rows="4" required></textarea>
+                </div>
             </fieldset>
             <input type="submit" value="Sign Up">
             <!--<button type="submit">Sign Up</button>-->
