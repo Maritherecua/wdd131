@@ -68,3 +68,73 @@ main {
     height: auto;
     display: block;
 }
+
+/* Form Styles */
+.wf {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+.wf fieldset {
+    border: 1px solid var(--primary-color);
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.wf legend {
+    font-family: var(--font-title);
+    color: var(--primary-color);
+    font-weight: bold;
+    padding: 0 0.5rem;
+}
+
+.wf label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    font-family: var(--font-p);
+    color: var(--text-color);
+}
+
+.wf input[type="text"],
+.wf input[type="email"],
+.wf input[type="tel"],
+.wf select,
+.wf textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.3rem;
+    border: 1px solid #ccc;
+    border-radius: 0.3rem;
+    font-family: var(--font-p);
+    box-sizing: border-box;
+}
+
+.wf input[type="checkbox"] {
+    width: auto;
+    margin-right: 0.5rem;
+}
+
+.wf label:has(input[type="checkbox"]) {
+    flex-direction: row;
+    align-items: center;
+}
+
+.wf input[type="submit"] {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 0.75rem 2rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.wf input[type="submit"]:hover {
+    background-color: var(--primary-color);
+}
