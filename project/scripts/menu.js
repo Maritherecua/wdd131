@@ -1,10 +1,15 @@
 const hamButton = document.querySelector("#menu");
 const navigation = document.querySelector("nav");
 
-hamButton.addEventListener('click', () => {
-	navigation.classList.toggle('open');
-	hamButton.classList.toggle('open');
-});
+if (hamButton && navigation) {
+	hamButton.addEventListener('click', () => {
+		navigation.classList.toggle('open');
+		hamButton.classList.toggle('open');
+	});
+}
 
 // get current year
-document.getElementById("currentyear").innerText = new Date().getFullYear();
+const currentYearElement = document.getElementById("currentyear");
+if (currentYearElement) {
+	currentYearElement.innerText = new Date().getFullYear();
+}

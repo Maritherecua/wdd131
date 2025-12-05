@@ -44,18 +44,20 @@ const services = [
     }
 ];
 function createServiceSelectList() {
-    services.forEach(service => {
-        const optElement = document.createElement('option');
-        optElement.value = service.id;
-        optElement.textContent = service.name;
-        const selectElement = document.getElementById('service-select');
-        if (selectElement) {
+    const selectElement = document.getElementById('service-select');
+    if (selectElement) {
+        services.forEach(service => {
+            const optElement = document.createElement('option');
+            optElement.value = service.id;
+            optElement.textContent = service.name;
             selectElement.appendChild(optElement);
-        }
-    });
+        });
+    }
 }
 
-createServiceSelectList();
+if (document.getElementById('service-select')) {
+    createServiceSelectList();
+}
 
 function createServiceCards() {
     services.forEach(service => {
@@ -85,7 +87,9 @@ function createServiceCards() {
     });
 }
 
-createServiceCards();
+if (document.getElementById('services-container')) {
+    createServiceCards();
+}
 
 function createEventsTable() {
     services.forEach(service => {
@@ -108,4 +112,6 @@ function createEventsTable() {
     });
 }
 
-createEventsTable();
+if (eventList) {
+    createEventsTable();
+}
