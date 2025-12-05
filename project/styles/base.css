@@ -1,41 +1,70 @@
 :root {
     --font-title: 'Exo 2', sans-serif;
     --font-p: 'Roboto', sans-serif;
-    --primary-color: #5DADE2; /* Soft Blue */
-    --secondary-color: #58D68D; /* Soft Green */
-    --accent-color: #F4F6F7; /* Light Neutral */
-    --text-color: #2C3E50; /* Dark Slate */
+    --primary-color: #5DADE2;
+    /* Soft Blue */
+    --secondary-color: #58D68D;
+    /* Soft Green */
+    --accent-color: #F4F6F7;
+    /* Light Neutral */
+    --text-color: #2C3E50;
+    /* Dark Slate */
 }
+
 body {
     margin: auto;
     max-width: 1500px;
 }
-header, footer {
+
+header,
+footer {
     background-color: var(--primary-color);
     margin: 0;
     color: white;
     border-radius: 4em 0;
     box-shadow: var(--light-shadow);
+    text-align: center;
 }
+
 h1 {
     font-family: var(--font-title);
-    color: var(--primary-color);
-    padding:1rem 0 0;
+    color: white;
+    padding: 1rem 0 0;
     margin: .5em;
     text-align: center;
 }
-h2, h3 {
+
+h2,
+h3 {
     font-family: var(--font-title);
     color: var(--primary-color);
     text-align: center;
     padding: .5rem;
     background-color: var(--accent-color);
 }
+
 main {
 
     background-color: white;
     min-height: 75vh;
 }
+
 .thanksmain {
     height: 100vh;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+}
+
+.hero picture {
+    display: block;
+    width: 100%;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
 }

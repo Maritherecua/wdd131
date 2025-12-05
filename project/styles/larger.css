@@ -2,17 +2,22 @@
     :root {
         --font-titles: "Exo 2", sans-serif;
         --font-paragraphs: "Roboto", sans-serif;
-        --primary-color: #5DADE2; /* Soft Blue */
-        --secondary-color: #58D68D; /* Soft Green */
+        --primary-color: #5DADE2;
+        /* Soft Blue */
+        --secondary-color: #58D68D;
+        /* Soft Green */
         --bright-font: #1A252F;
-        --dark-font:var(--dark-font);
+        --dark-font: var(--dark-font);
         font-size: large;
     }
-    header, footer {
+
+    header,
+    footer {
         border-radius: 2em 0;
-        background: none;
-        box-shadow: none;
+        background-color: var(--primary-color);
+        box-shadow: 0px 0px .5em;
     }
+
     h1 {
         background-color: var(--primary-color);
         padding: .5em;
@@ -20,9 +25,11 @@
         border-radius: 4em 0;
         box-shadow: 0px 0px .5em;
     }
+
     menu {
         display: none;
     }
+
     nav {
         display: flex;
         position: initial;
@@ -31,17 +38,36 @@
         width: 100%;
         flex-direction: row;
         border-radius: 2em 2em 0 0;
-    
+
     }
+
     nav a {
-        display:block;
+        display: block;
         flex: 1 1 100%;
         border-radius: 2em 2em 0 0;
     }
-    nav a:hover {
-        border-radius:5em;
+
+    .hero {
+        width: 100%;
+        max-width: 100%;
     }
-    nav:nth-child(4) {
-        border-radius: 5em;
+
+    .hero picture {
+        width: 100%;
     }
+
+    .hero img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+}
+
+nav a:hover {
+    border-radius: 5em;
+}
+
+nav:nth-child(4) {
+    border-radius: 5em;
+}
 }
