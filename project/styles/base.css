@@ -1,8 +1,8 @@
 :root {
     --font-title: 'Exo 2', sans-serif;
     --font-p: 'Roboto', sans-serif;
-    --primary-color: #5DADE2;
-    /* Soft Blue */
+    --primary-color: #2E86C1;
+    /* Soft Blue - WCAG AA compliant */
     --secondary-color: #58D68D;
     /* Soft Green */
     --accent-color: #F4F6F7;
