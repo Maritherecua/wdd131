@@ -186,3 +186,41 @@ main p {
 .ratio-9-16 {
     aspect-ratio: 9 / 16;
 }
+
+/* Cards grid: responsive layout for project cards */
+#cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    align-items: start;
+}
+
+/* Two columns from tablet and up (makes 2x2 for four cards) */
+@media (min-width: 600px) {
+    #cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Optional: 4 columns on wide screens */
+@media (min-width: 1100px) {
+    #cards {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.card {
+    background: var(--accent-color);
+    padding: 1rem;
+    border-radius: 6px;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.06);
+}
+
+.card img,
+.card .lazy-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 4px;
+    object-fit: cover;
+}
