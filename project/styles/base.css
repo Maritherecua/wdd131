@@ -213,7 +213,7 @@ main p {
     background: var(--accent-color);
     padding: 1rem;
     border-radius: 6px;
-    box-shadow: 0 1px 6px rgba(0,0,0,0.06);
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.06);
 }
 
 .card img,
