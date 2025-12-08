@@ -82,7 +82,7 @@ nav {
 }
 
 main {
-    background-color: white;
+    background-color: rgb(215, 237, 237);
     min-height: 75vh;
     padding: 0 1.5rem;
 }
