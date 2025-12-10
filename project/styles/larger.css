@@ -1,75 +1,45 @@
 @media screen and (min-width: 550px) {
-    :root {
-        --font-titles: "Exo 2", sans-serif;
-        --font-paragraphs: "Roboto", sans-serif;
-        --primary-color: #5DADE2;
-        /* Soft Blue */
-        --secondary-color: #58D68D;
-        /* Soft Green */
-        --bright-font: #1A252F;
-        --dark-font: var(--dark-font);
-        font-size: large;
+
+    /* Larger font size for bigger screens */
+    body {
+        font-size: 1.1rem;
     }
 
-    header,
-    footer {
-        border-radius: 2em 0;
-        background-color: var(--primary-color);
-        box-shadow: 0px 0px .5em;
-    }
-
-    h1 {
-        background-color: var(--primary-color);
-        padding: .5em;
-        margin: 0.5em 0;
-        border-radius: 4em 0;
-        box-shadow: 0px 0px .5em;
-    }
-
-    menu {
+    /* Hide mobile menu button on larger screens */
+    #menu {
         display: none;
     }
 
+    /* Enhanced navigation spacing */
     nav {
-        display: flex;
-        position: initial;
-        justify-content: center;
-        margin: 1em auto 0;
-        width: 100%;
-        flex-direction: row;
-        border-radius: 2em 2em 0 0;
-
+        gap: 1.5rem;
     }
 
     nav a {
-        display: block;
-        flex: 1 1 100%;
-        border-radius: 2em 2em 0 0;
+        padding: 0.5rem 1rem;
+        border-radius: 0.5rem;
+        transition: background-color 0.3s ease;
     }
 
-    .hero {
-        width: 100%;
-        max-width: 100%;
+    nav a:hover {
+        background-color: rgba(255, 255, 255, 0.2);
     }
 
+    nav a.active {
+        background-color: rgba(255, 255, 255, 0.3);
+        font-weight: bold;
+    }
+
+    /* Hero image optimization for larger screens */
     .hero picture {
-        width: 100%;
+        max-height: 600px;
+        overflow: hidden;
     }
 
     .hero img {
-        width: 100%;
-        height: auto;
         object-fit: cover;
+        max-height: 600px;
     }
-}
 
-nav a:hover {
-    border-radius: 5em;
-}
-
-nav:nth-child(4) {
-    border-radius: 5em;
-}
-nav a.active {
-    color: #ff3232;
+    /* Card layout already handled by base.css media queries */
 }

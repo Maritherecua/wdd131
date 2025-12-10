@@ -40,14 +40,22 @@ function createProductList() {
 
 createProductList();
 
-let counter = localStorage.getItem("tally") || 1;
+// Initialize counter from localStorage or start at 0
+let counter = Number(localStorage.getItem("tally")) || 0;
 const counterDisplay = document.querySelector("#reviews");
 
-
-
+// Increment and display the review count
 function tallyReviews() {
-  counter = localStorage.getItem("tally");
-  counter = Number(counter) + 1;
+  counter = Number(localStorage.getItem("tally")) || 0;
+  counter = counter + 1;
   localStorage.setItem("tally", counter);
-  counterDisplay.innerText = counter;
+
+  if (counterDisplay) {
+    counterDisplay.textContent = `Thank you! You have submitted ${counter} review${counter !== 1 ? 's' : ''}.`;
+  }
+}
+
+// Auto-call on review.html page load
+if (counterDisplay) {
+  tallyReviews();
 }
