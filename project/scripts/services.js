@@ -26,18 +26,12 @@ const services = [
     },
     {
         id: 3,
-        name: "Regression therapy",
-        description: "Explore past life experiences and uncover hidden memories with our regression therapy sessions, aimed at personal growth and healing.",
-        price: "$80 per session"
-    },
-    {
-        id: 4,
         name: "Hypnotherapy",
         description: "Unlock the power of your subconscious mind with our hypnotherapy services, helping you overcome challenges and achieve your goals.",
         price: "$90 per session"
     },
     {
-        id: 5,
+        id: 4,
         name: "Pain management",
         description: "Discover effective pain management techniques through our specialized sessions, designed to alleviate chronic pain and improve quality of life.",
         price: "$70 per session"
