@@ -60,34 +60,39 @@ if (document.getElementById('service-select')) {
 }
 
 function createServiceCards() {
-    services.forEach(service => {
-        if (service.id % 2 !== 0) {
+    const container = document.getElementById('cards');
+    if (container) {
+        services.forEach(service => {
             const serviceCard = document.createElement('section');
-            serviceCard.classList.add('service-card');
+            serviceCard.classList.add('card');
+
             const title = document.createElement('h3');
             title.textContent = service.name;
-            const description = document.createElement('p');
-            description.textContent = service.description;
-            const price = document.createElement('p');
-            price.textContent = service.price;
             serviceCard.appendChild(title);
 
             const img = document.createElement('img');
-            img.src = `images/service-${service.id}.jpg`;
-            img.alt = service.name;
+            img.classList.add('lazy-img', 'ratio-4-3');
+            img.src = 'images/hero-small.webp';
+            img.alt = `${service.name} - holistic therapy service`;
+            img.loading = 'lazy';
+            img.width = 800;
+            img.height = 600;
             serviceCard.appendChild(img);
 
+            const description = document.createElement('p');
+            description.textContent = service.description;
             serviceCard.appendChild(description);
+
+            const price = document.createElement('p');
+            price.textContent = service.price;
             serviceCard.appendChild(price);
-            const container = document.getElementById('services-container');
-            if (container) {
-                container.appendChild(serviceCard);
-            }
-        }
-    });
+
+            container.appendChild(serviceCard);
+        });
+    }
 }
 
-if (document.getElementById('services-container')) {
+if (document.getElementById('cards')) {
     createServiceCards();
 }
 
