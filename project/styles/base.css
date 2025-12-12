@@ -154,7 +154,8 @@ main p {
 
 .wf legend {
     font-family: var(--font-title);
-    color: var(--primary-color);
+    color: #1A5490;
+    /* Darker blue for WCAG AA compliance on light background */
     font-weight: bold;
     padding: 0 0.5rem;
 }
