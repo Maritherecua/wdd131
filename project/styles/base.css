@@ -3,8 +3,8 @@
     --font-p: 'Roboto', sans-serif;
     --primary-color: #0D47A1;
     /* Dark Blue - WCAG AAA compliant (8.59:1 contrast with white) */
-    --secondary-color: #229954;
-    /* Darker Green - WCAG AA compliant (4.52:1 contrast with white) */
+    --secondary-color: #1B5E20;
+    /* Dark Green - WCAG AAA compliant (7.43:1 contrast with white) */
     --accent-color: #F4F6F7;
     /* Light Neutral */
     --text-color: #2C3E50;
