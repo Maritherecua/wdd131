@@ -16,9 +16,9 @@
     }
 
     nav a {
-        padding: 0.5rem 1rem;
         border-radius: 0.5rem;
         transition: background-color 0.3s ease;
+        /* padding and min-height already set in base.css for touch targets */
     }
 
     nav a:hover {
