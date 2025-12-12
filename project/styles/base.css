@@ -67,12 +67,33 @@ nav a {
     color: white;
     text-decoration: none;
     font-family: var(--font-p);
+    padding: 0.75rem 1rem;
+    /* Ensure minimum 48px touch target */
+    min-height: 48px;
+    display: flex;
+    align-items: center;
 }
 
 .logo img {
     height: 48px;
     width: auto;
     display: block;
+}
+
+/* Menu button - ensure proper touch target */
+#menu {
+    min-width: 48px;
+    min-height: 48px;
+    padding: 0.5rem;
+    background: none;
+    border: 2px solid white;
+    color: white;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+#menu::before {
+    content: "☰";
 }
 
 /* Make header stack on very small screens */
