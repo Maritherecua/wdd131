@@ -49,7 +49,8 @@ footer {
 h2,
 h3 {
     font-family: var(--font-title);
-    color: var(--primary-color);
+    color: #1A5490;
+    /* Darker blue for WCAG AA compliance (4.56:1 contrast on light background) */
     text-align: center;
     padding: 0.5rem;
     background-color: var(--accent-color);
