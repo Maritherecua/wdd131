@@ -215,22 +215,31 @@ main p {
 .wf select,
 .wf textarea {
     width: 100%;
-    padding: 0.5rem;
+    padding: 12px;
+    /* Minimum 48px touch target height (12px x 2 = 24px + text height) */
     margin-top: 0.3rem;
     border: 1px solid #ccc;
     border-radius: 0.3rem;
     font-family: var(--font-p);
+    font-size: 16px;
+    /* Minimum 16px to prevent zoom on mobile */
     box-sizing: border-box;
+    min-height: 48px;
 }
 
 .wf input[type="checkbox"] {
-    width: auto;
+    width: 24px;
+    height: 24px;
     margin-right: 0.5rem;
+    cursor: pointer;
 }
 
 .wf label:has(input[type="checkbox"]) {
     flex-direction: row;
     align-items: center;
+    cursor: pointer;
+    min-height: 48px;
+    /* Entire label area is clickable */
 }
 
 .wf input[type="submit"] {
